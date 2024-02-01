@@ -1,0 +1,13 @@
+package com.marcoduarte.dom6;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class Dom6ApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

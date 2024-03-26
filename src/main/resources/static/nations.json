@@ -1,0 +1,26 @@
+[
+  {
+    "id": 5,
+    "name": "Arcoscephale",
+    "era": "Golden Era",
+    "abbreviation": "Arc",
+    "image": "early_arcoscephale",
+    "level": 1
+  },
+  {
+    "id": 6,
+    "name": "Mekone",
+    "era": "Brazen Giants",
+    "abbreviation": "Mek",
+    "image": "early_mekone",
+    "level": 1
+  },
+  {
+    "id": 7,
+    "name": "Pangaea",
+    "era": "Age of Revelry",
+    "abbreviation": "Pa",
+    "image": "early_pangaea",
+    "level": 1
+  }
+]

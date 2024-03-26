@@ -11,24 +11,23 @@ import java.util.List;
 @Controller
 public class HomeController {
 
-    @GetMapping("/")
-    public String index(){
-        return "index";
-    }
+    private final List<Nation> nations;
 
-    private static final List<Nation> nations;
-    static {
+    public HomeController() {
         nations = new ArrayList<>();
         nations.add(new Nation(5, "Arcoscephale", "Golden Era", "Arc", "early_arcoscephale", 1));
         nations.add(new Nation(6, "Mekone", "Brazen Giants", "Mek", "early_mekone", 1));
         nations.add(new Nation(7, "Pangaea", "Age of Revelry", "Pa", "early_pangaea", 1));
     }
 
-    @GetMapping("/dynamic")
-    public String dynamic(Model model) {
-        model.addAttribute("nations", this.nations);
-        return "dynamic";
+    @GetMapping("/")
+    public String index() {
+        return "index";
     }
 
+    @GetMapping("/dynamic")
+    public String dynamic(Model model) {
+        model.addAttribute("nations", nations);
+        return "dynamic";
+    }
 }
-
